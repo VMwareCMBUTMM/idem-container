@@ -1,6 +1,9 @@
 # idem-container
 Container image with Salt Idem built using PhotonOS 3.0.
-
+* Python - python3-3.7.5-9.ph3
+* Pip - python3-pip-3.7.5-9.ph3
+* Idem - 15.0.0
+* Idem_azure_auto - 0.0.3
 
 ## Download the latest image
 The idem-container image is built and published to GitHub Container Repository (ghcr.io) and Docker Hub (docker.io).

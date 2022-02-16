@@ -34,8 +34,7 @@ jobs:
             vmwarecmbu/idem-container
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
+            type=raw,value=latest,enable=${{ endsWith(GitHub.ref, 'main') }}
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
 

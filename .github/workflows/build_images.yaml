@@ -43,7 +43,7 @@ jobs:
         uses: docker/metadata-action@v3.6.2
         with:
           images: |
-            ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}
+            ${{ secrets.DOCKER_USERNAME }}/idem-container
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=raw,value=azure-latest
